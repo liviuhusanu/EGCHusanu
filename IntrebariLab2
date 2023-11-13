@@ -1,0 +1,23 @@
+1. Viewport:
+Un viewport în OpenGL este o regiune a ferestrei de afișare unde se desenează scenele 3D. Este specificat prin coordonatele sale în cadrul ferestrei și determină zona în care vor fi afișate grafică sau obiectele 3D.
+
+2. Frames Per Second (FPS) în OpenGL:
+FPS reprezintă numărul de cadre (imagini) afișate pe secundă într-o aplicație grafică. În OpenGL, gestionarea FPS-ului poate fi controlată prin măsurarea timpului dintre cadre și ajustarea logicii de randare pentru a menține o rată de cadre optimă.
+
+3. Metoda OnUpdateFrame():
+În contextul OpenGL, aceasta depinde de implementare. În general, OnUpdateFrame() poate fi rulată în fiecare cadru și este utilizată pentru a actualiza starea jocului sau a aplicației.
+
+4. Modul Imediat de Randare:
+Modul imediat de randare în OpenGL (Immediate Mode) se referă la utilizarea funcțiilor imediate pentru desenare, cum ar fi glBegin() și glEnd(). Aceasta este o metodă veche și învechită, fiind înlocuită de modul modern bazat pe VBOs și shader-e.
+
+5. Ultima versiune de OpenGL cu suport pentru modul imediat:
+OpenGL versiunea 3.3 încă suportă modul imediat, dar este recomandat să se utilizeze tehnici moderne pentru performanță și flexibilitate.
+
+6. Metoda OnRenderFrame():
+OnRenderFrame() este rulată în fiecare cadru și este utilizată pentru desenarea efectivă a scenei 3D în fereastră.
+
+7. Metoda OnResize():
+OnResize() este rulată atunci când fereastra este redimensionată. Este importantă pentru recalcularea matricelor de proiecție și aspect ratio-ului pentru a menține o afișare corectă a scenei.
+
+8. Parametrii metodei CreatePerspectiveFieldOfView():
+Această metodă este specifică unor biblioteci sau framework-uri, dar în general, aceasta ar trebui să specifice un unghi de vedere vertical (field of view), raportul de aspect, și distanțele la planul apropiat și cel îndepărtat al unui volum de vizualizare tridimensional. Domeniul valorilor depinde de implementare, dar de obicei, FOV-ul este în grade, iar raportul de aspect este raportul dintre lățime și înălțime.
