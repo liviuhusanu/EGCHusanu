@@ -1,0 +1,28 @@
+1. Ordinea de desenare a vertexurilor:
+Pentru a determina ordinea de desenare (orar sau anti-orar), poziționarea vertexurilor trebuie să respecte regula mâinii drepte. În OpenGL, aceasta poate afecta culling-ul fețelor.
+
+2. Anti-aliasing:
+Anti-aliasing este o tehnică folosită pentru a reduce efectele denticulate sau zimțate ale liniei și marginilor în grafică computerizată. Aceasta funcționează prin adăugarea de nuanțe de culoare între zonele de contrast.
+
+3. GL.LineWidth(float) și GL.PointSize(float):
+GL.LineWidth(float) stabilește grosimea liniilor.
+GL.PointSize(float) stabilește dimensiunea punctelor.
+Aceste comenzi au efect doar în interiorul unui bloc GL.Begin().
+
+4. Directivele OpenGL:
+GL.LineLoop: Desenează o linie care leagă toate vertexurile și se închide într-o buclă.
+GL.LineStrip: Desenează segmentele de dreaptă în ordine, legând vertexurile succesive.
+GL.TriangleFan: Desenează triunghiuri conectate la primul vertex specificat.
+GL.TriangleStrip: Desenează triunghiuri conectate la vertexurile succesive.
+
+5. OpenGL_conn_ImmediateMode:
+Este dificil să răspund la această întrebare fără mai multe detalii despre conținutul exemplului dat.
+
+6. Culori diferite în obiectele 3D:
+Utilizarea de culori diferite pe fețe sau vertexuri permite crearea de efecte de iluminare și umbre mai realiste și oferă o mai bună percepție a formei obiectelor.
+
+7. Gradient de culoare în OpenGL:
+Un gradient de culoare este o tranziție lină între două sau mai multe culori. În OpenGL, acesta poate fi obținut folosind shader-e și interpolare.
+
+8. Culori diferite pentru fiecare vertex în modul strip:
+Atunci când se desenează o linie sau un triunghi în modul strip, culorile diferite pentru fiecare vertex pot crea un efect de gradient de culoare sau pot fi utilizate pentru a evidenția anumite caracteristici ale obiectului.
